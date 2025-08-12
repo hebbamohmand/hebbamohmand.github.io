@@ -1,52 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About Me</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>About Me — Hebba Mohmand</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="projects.html">Projects</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
+<body class="bg">
+  <header class="site-header">
+    <nav class="nav wrapper">
+      <a class="brand" href="index.html">HEBBA</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="is-active" href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <h1>About Me</h1>
+  <main class="wrapper page">
+    <h1 class="page-title">About Me</h1>
+
     <p>Hello! I'm <strong>Hebba Mohmand</strong>, a third-year Computer Engineering student at the University of Virginia, pursuing a focus path in <em>CHIPS</em> — Circuit Hardware Integration for Processing and Systems.</p>
 
-    <p>My academic and technical interests lie in <strong>electronics, circuit design, hardware-software integration, and embedded systems</strong>. Whether it’s building an audio analyzer PCB or writing low-level C code, I enjoy applying engineering principles to real-world challenges in creative and impactful ways.</p>
+    <p>My academic and technical interests lie in <strong>electronics, circuit design, hardware-software integration, embedded systems, and using technical solutions in the Finance world (FinTech)</strong>. Whether it’s building an audio analyzer PCB, writing low-level C code, or building a web app to calculate price totals and discounts, I enjoy applying engineering principles to real-world challenges in creative and impactful ways.</p>
 
-    <figure>
-        <img src="nightmarket.jpg" alt="A photo of Hebba Mohmand" width="200">
-        <figcaption style="font-size: 0.9em; color: gray;">Photo by TSA Gallery</figcaption>
+    <div class="figure-grid">
+      <figure>
+        <img src="nightmarket.jpg" alt="A photo of Hebba Mohmand" />
+        <figcaption>Photo by TSA Gallery</figcaption>
       </figure>
 
-    <figure>
-        <img src="tasteoftaiwan.jpg" alt="Hebba Mohmand at ToT" width="200">
-        <figcaption style="font-size: 0.9em; color: gray;">Photo by TSA Gallery</figcaption>
+      <figure>
+        <img src="tasteoftaiwan.jpg" alt="Hebba Mohmand at ToT" />
+        <figcaption>Photo by TSA Gallery</figcaption>
       </figure>
 
-    <figure>
-        <img src="TSAspringgbm.jpg" alt="Hebba Mohmand at TSA Spring GBM" width="200">
-        <figcaption style="font-size: 0.9em; color: gray;">Photo by TSA Gallery</figcaption>
+      <figure>
+        <img src="TSAspringgbm.jpg" alt="Hebba Mohmand at TSA Spring GBM" />
+        <figcaption>Photo by TSA Gallery</figcaption>
       </figure>
+    </div>
 
-    <p>Outside of the classroom, I serve as the <strong>Treasurer of the Taiwanese Student Association (TSA)</strong> at UVA, where I manage financial records, streamline all budgeting processes, and collaborate with local businesses through our <strong>EasyCard initiative</strong> — a student perks program inspired by Taiwan’s original EasyCard system. I also work with national and global companies to sponsor our flagship cultural event, <strong>Night Market</strong>, in partnership with UVA Student Council, the Honor Committee, University Programs Council (UPC), and fellow student cultural organizations across Grounds.</p>
+    <p>Outside of the classroom, I serve as the <strong>Treasurer of the Taiwanese Student Association (TSA)</strong> at UVA, where I manage financial records, streamline all budgeting processes, and collaborate with local businesses through our <strong>EasyCard initiative</strong>, a student perks program inspired by Taiwan’s original EasyCard system. I also work with national and global companies to sponsor our flagship cultural event, <strong>Night Market</strong>, in partnership with UVA Student Council, the Honor Committee, University Programs Council (UPC), and fellow student cultural organizations across Grounds.</p>
 
     <p>In Fall 2024, I will be joining the UVA School of Engineering as a <strong>Grader and Teaching Assistant for ECE 2600 (Electronics)</strong>, helping students develop a strong foundation in analog circuit design. I also continue to serve as an <strong>advisor for the Peer Advising Family Network (PAFN)</strong>, which supports the transition and success of first-year students in the Asian Pacific Islander South Asian American (APISAA) community at UVA.</p>
 
-    <p>Since January 2024, I’ve also been working as a <strong>tutor with America Reads</strong>, providing academic support and literacy assistance to young students in local Charlottesville schools.  Additionally, I volunteer with <strong>NOVA RAFT</strong> (Resettling Afghan Families Together), assisting with the resettlement of Afghan refugee families in the Northern Virginia area — an experience that’s deepened my commitment to community care and cross-cultural engagement.</p>
+    <p>Since January 2024, I’ve also been working as a <strong>tutor with America Reads</strong>, providing academic support and literacy assistance to young students in local Charlottesville schools. Additionally, I volunteer with <strong>NOVA RAFT</strong> (Resettling Afghan Families Together), assisting with the resettlement of Afghan refugee families in the Northern Virginia area — an experience that’s deepened my commitment to community care and cross-cultural engagement.</p>
 
     <p>Outside of engineering, I enjoy journaling, cooking, graphic design, video editing with Adobe Creative Cloud, exploring local hiking trails and literature, and finding creative ways to build community through storytelling and cultural programming.</p>
 
     <p>If you'd like to see some of my work, feel free to explore my <a href="projects.html">projects</a> or <a href="contact.html">get in touch</a>.</p>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrapper footer-inner">
+      <small>© 2025 Hebba Mohmand. All rights reserved.</small>
+      <div class="social">
+        <a aria-label="Email" href="contact.html">✉️</a>
+        <a aria-label="LinkedIn" href="#" target="_blank" rel="noreferrer">in</a>
+        <a aria-label="GitHub" href="#" target="_blank" rel="noreferrer"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // tiny nav toggle (no framework)
+    const btn = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      links.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
